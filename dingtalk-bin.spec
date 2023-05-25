@@ -5,7 +5,7 @@
 AutoReqProv: no
 
 Name:           dingtalk-bin
-Version:        1.6.0.230113
+Version:        1.7.0.30424
 Release:        2%{?dist}
 Summary:        钉钉
 
@@ -14,7 +14,7 @@ URL:            https://gov.dingtalk.com
 Source0:        https://dtapp-pub.dingtalk.com/dingtalk-desktop/xc_dingtalk_update/linux_deb/Release/com.alibabainc.dingtalk_%{version}_amd64.deb
 Source1:        https://tms.dingtalk.com/markets/dingtalk/service-terms-zh
 Source2:        dingtalk-bin.desktop
-Source3:        dingtalk.svg
+Source3:        dingtalk.ico
 Source4:        dingtalk-launcher.sh
 Source5:        libcairo.so.2
 Source6:        xdg-open
@@ -69,6 +69,9 @@ rm -rf %{buildroot}/opt/dingtalk-bin/*Release*/{libcurl.so.4,libz*}
 /opt/dingtalk-bin/
 
 %changelog
+* Thu Jun 25 2023 xiaozhangup <xiaozhangshiw@163.com> - 1.7.0.30424
+- new version
+
 * Tue Jan 17 2023 zhullyb <zhullyb@outlook.com> - 1.6.0.230113-2
 - fix open url
 
