@@ -14,10 +14,9 @@ URL:            https://gov.dingtalk.com
 Source0:        https://dtapp-pub.dingtalk.com/dingtalk-desktop/xc_dingtalk_update/linux_deb/Release/com.alibabainc.dingtalk_%{version}_amd64.deb
 Source1:        https://tms.dingtalk.com/markets/dingtalk/service-terms-zh
 Source2:        dingtalk-bin.desktop
-Source3:        dingtalk.ico
-Source4:        dingtalk-launcher.sh
-Source5:        libcairo.so.2
-Source6:        xdg-open
+Source3:        dingtalk-launcher.sh
+Source4:        libcairo.so.2
+Source5:        xdg-open
 BuildRequires:  dpkg
 Requires:       libGLU.so.1
 Requires:       libxcrypt-compat
