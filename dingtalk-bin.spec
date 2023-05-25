@@ -40,19 +40,22 @@ mv %{BUILD_DIR}/opt/apps/com.alibabainc.dingtalk/files/* %{buildroot}/opt/dingta
 # Desktop file
 install -Dm644 %{S:2} -t %{buildroot}%{_datarootdir}/applications/
 
+# Icons
+install -Dm644 %{S:3} -t %{buildroot}%{_datarootdir}/icons/hicolor/scalable/apps/
+
 # Launcher
 install -d %{buildroot}%{_bindir}
-install -Dm755 %{S:3} %{buildroot}%{_bindir}/dingtalk
+install -Dm755 %{S:4} %{buildroot}%{_bindir}/dingtalk
 
 # Patch
 # fix cairo
-install -Dm644 %{S:4} %{buildroot}/opt/dingtalk-bin/*Release*
+install -Dm644 %{S:5} %{buildroot}/opt/dingtalk-bin/*Release*
 # fix chinese input in workbench
 rm -rf %{buildroot}/opt/dingtalk-bin/*Release*/{libm.so.6,Resources/{i18n/tool/*.exe,qss/mac,web_content/NativeWebContent_*.zip},libstdc*}
 # fix chinese input in workbench
 rm -rf %{buildroot}/opt/dingtalk-bin/*Release*/libgtk-x11-2.0.so.*
 # fix open url
-install -Dm755 %{S:5} -t %{buildroot}/opt/dingtalk-bin/*Release*
+install -Dm755 %{S:6} -t %{buildroot}/opt/dingtalk-bin/*Release*
 
 # remove unused lib
 rm -rf %{buildroot}/opt/dingtalk-bin/*Release*/{libcurl.so.4,libz*}
