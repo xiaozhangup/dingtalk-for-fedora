@@ -68,6 +68,9 @@ rm -rf %{buildroot}/opt/dingtalk-bin/*Release*/{libcurl.so.4,libz*}
 /opt/dingtalk-bin/
 
 %changelog
+* Thu Jun 25 2023 xiaozhangup <xiaozhangshiw@163.com> - 1.7.0.30424-1
+- change icon
+
 * Thu Jun 25 2023 xiaozhangup <xiaozhangshiw@163.com> - 1.7.0.30424
 - new version
 
